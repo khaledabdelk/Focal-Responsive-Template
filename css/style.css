@@ -1,0 +1,396 @@
+/* start my framework */
+
+.my-btn {
+    background:none;
+    color: #2dcc70;;
+    border:3px solid #2dcc70;
+    padding:10px 30px;
+    font-weight: bold;
+}
+
+.fl-left {float:left}
+
+p {color:#888;line-height:1.6;}
+
+h2 , h3 {color:#777;}
+
+.text-center {text-align: center;}
+
+.container {
+    margin-left:auto;
+    margin-right: auto;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.clearfix {clear:both}
+
+/* Small */
+
+@media (min-width:768px) {
+    .container {width:750px;}
+}
+
+/* Medium */
+
+@media (min-width:992px) {
+    .container {width:970px;}
+}
+
+/* Large */
+
+@media (min-width:1200px) {
+    .container {width:1170px;}
+}
+
+/* End my framework */
+
+/* Start Header */
+
+.header .slider {
+    height:400px;
+    background-image: url('../images/slider.jpg');
+    background-size: cover;
+}
+
+.header .slider .intro {color:#FFF;padding-top:150px;}
+
+.header .slider .intro h2 {
+    margin:0 auto;
+    font-size:2.2em;
+    width:50%;
+    border-top:4px solid #FFF;
+    border-bottom:4px solid #FFF;
+    padding:5px 0;
+    color:#FFF;
+}
+
+.header .slider .intro button {
+    background: none;
+    margin-top:30px;
+    font-size:20px;
+    border:2px solid #FFF;
+    font-weight:bold;
+    padding:10px 30px;
+}
+
+@media (max-width:767px) {
+    .header .slider .intro {padding-top:80px;}
+    .header .slider {height:250px;}
+    .header .slider .intro h2 {font-size:13px}
+    .header .slider .intro button {margin-top:20px;font-size:15px;padding:5px }
+}
+.header .navbar {
+    background-color:#252F31;
+    color:#FFF;
+}
+.header .navbar .container{
+    background-color:#252F31;
+    color:#FFF;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header .navbar h2 {color:#FFF;}
+
+.header .navbar h2 span {color:#2ecc71;}
+
+.header .navbar ul {
+    list-style:none;
+    padding-left:0px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header .navbar ul li {padding:10px;text-transform: capitalize;}
+
+.header .navbar ul li a {color:#FFF;text-decoration:none;}
+
+.header .navbar ul li a:hover,
+.header .navbar ul li.active a {color:#30b576}
+
+@media (max-width:767px) {
+    .header .navbar .container {flex-direction: column}
+    .header .navbar ul li {font-size: 10px;padding:2px;}
+}
+
+/* End Header */
+
+/*start Features */
+
+.features {padding-top:40px;padding-bottom:50px;}
+
+.features .container {display: flex; align-items: center;justify-content: space-between;}
+
+.features  .feat {flex-basis: 30%;}
+
+@media (max-width:767px) {
+    .features .container {flex-direction: column;text-align: center;}
+}
+
+/*end Features */
+
+/*start about me*/
+
+.aboutme {background-color: #F2f2f2;}
+
+.aboutme .container {display:flex;justify-content:space-between;align-items: center;}
+
+.aboutme .image img {max-width:100%;max-height: 100%;}
+
+.aboutme .info h2 {margin:10px 0}
+
+.aboutme .info > p {margin:0}
+
+.aboutme .info > p:last-of-type {margin-top:0px;margin-bottom:0;}
+
+.aboutme .info .hobbies {display:flex;flex-wrap:wrap;justify-content:space-around;margin-top:11px}
+
+.aboutme .info .hobbies .content {min-height:90px;display: flex;justify-content: space-between;flex-basis:40%}
+
+.aboutme .info .hobbies .content i {flex-basis:25%;margin-top:13px;color:#30b576}
+
+.aboutme .info .hobbies .content h3 {margin:0px;}
+
+.aboutme .info .hobbies .content .text p {margin-top:5px;margin-bottom:5px}
+
+@media (max-width:767px) {
+    .aboutme .container {flex-direction: column;}
+    .aboutme .image {flex-basis: 15%; text-align: center;}
+    .aboutme .info {text-align: center;}
+    .aboutme .info .hobbies {flex-direction: column;}
+    .aboutme .info .hobbies .content {flex-direction: column;}
+    .aboutme .info .hobbies .content h3 {margin:15px auto;}
+
+}
+
+/*end about me*/
+
+/*start my skills */
+
+.myskills {padding-top:30px;padding-bottom:40PX;}
+
+.myskills .container{display: flex;justify-content: space-around;}
+
+.myskills .skills {flex-basis: 35%;}
+
+.myskills .progress {flex-basis: 60%;}
+
+.myskills .skills h2 {margin:25px 0 20px;text-transform:uppercase;}
+
+.myskills .skills p {margin:0 0 10px;}
+
+.myskills .skills p:last-of-type {margin-top:25px;}
+
+.myskills .progress button {margin-top:30px;}
+
+.myskills .progress .technique h3 {margin-bottom: 10px;margin-top: 15px;}
+
+.myskills .progress .technique div {background-color: #F2f2f2;height:25px;}
+
+.myskills .progress .technique div span {
+    display:block;
+    background-color: #2ecc71;
+    height:25px;
+    text-align:right;
+    color:#FFF;
+    font-weight: bold;
+    font-size:1.5em;
+    line-height: 25px;
+}
+
+@media (max-width:767px) {
+    .myskills .container {flex-direction: column;}
+    .myskills .skills {text-align: center;}
+
+}
+
+/*end my skills*/
+
+/*start resume*/
+
+.resume {padding:50px 0;background-color: #F2f2f2;}
+
+.resume h2 {margin:0px 0 auto;text-transform: uppercase;}
+
+.resume p {margin:40px 0;padding:0 15px;}
+
+/*end resume*/
+
+/*start my education */
+
+.myeducation {padding: 30px 0;}
+
+.myeducation .educ {display: flex;justify-content: space-between;margin-top:50px}
+
+.myeducation .main {flex-basis: 35%;}
+
+.myeducation .main h2 {margin:0 0 20px;text-transform: uppercase;}
+
+.myeducation .main p {margin:0 0 10px;}
+
+.myeducation .main p:last-of-type {margin-top: 25px;margin-bottom: 40px;}
+
+.myeducation .exp {flex-basis: 60%;}
+
+.myeducation .exp h3 {margin:0 0 5px;text-transform: uppercase;}
+
+.myeducation .exp p {margin:0 0 35px;}
+
+.myeducation .exp span {
+    display: block;
+    width:57px;
+    height:20px;
+    color:#FFF;
+    padding:5px 10px;
+    font-weight: bold;
+    background-color: #2dcc70;
+}
+
+.myeducation .exp hr {
+    margin:20px 0;
+    height:1px;
+    border:0;
+    background-color: #999;
+}
+
+@media (max-width:767px) {
+    .myeducation .educ {flex-direction: column;}
+    .myeducation .main {text-align: center;}
+
+}
+
+/*end my education*/
+
+/*start testimonials*/
+
+.testimonials {
+    padding:50px 0 50px 0;
+    background-color: #f2f2f2;
+}
+
+.testimonials q {
+    line-height: 1.8;
+    color:#888;
+    font-size:18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.testimonials ul {
+    list-style: none;
+    padding-left:0;
+    overflow: hidden;
+    margin-top: 20px;;
+}
+
+.testimonials ul li {
+    display: inline-block;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    border:2px solid #2dcc70;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.testimonials li.active,
+.testimonials li:hover {
+    background-color: #2dcc70;
+}
+
+/*end testimonials*/
+
+/*start portofolio*/
+
+.portofolio {
+    padding:30px 0;
+    background-color: #FFF;
+}
+
+.portofolio .our-work {display: flex;justify-content: space-around;flex-wrap: wrap;padding-bottom: 20px;}
+
+.portofolio h2 {margin-top: 5px;}
+
+.portofolio p {padding:0 33px;margin-bottom: 20px;}
+
+.portofolio .our-work > div {
+    flex-basis: 30%;
+    margin-top:20px ;
+}
+
+.portofolio .our-work div img {
+    max-width:95%;
+    padding:1px;
+    border:1px solid black;
+}
+
+/*end portofolio*/
+
+/*start contact*/
+
+.contact {
+    background-color: #252f31;
+    overflow: hidden;
+    padding-top:50px;
+    padding-bottom:70px;
+}
+
+.contact .container {display:flex;justify-content: space-between;}
+
+.contact .info {flex-basis:35%;}
+
+.contact .info h2 {color:#FFF;text-transform: uppercase;margin-top:0;}
+
+.contact .info p strong {color:#d1d6da;margin-right:30px;}
+
+.contact .form {flex-basis:60%;}
+
+.contact .form label {color:#d1d6da;display:block;}
+
+.contact .form input,
+.contact .form textarea {
+    background-color: #4B5557;
+    width:80%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border:none;
+}
+
+.contact .form input {height:30px; }
+
+.contact .form button {
+    color:#FFF;
+    padding:15px 25px;
+    text-transform: uppercase;
+    background-color: #191e22;
+    border: none;
+    font-weight:bold;
+}
+
+@media (max-width:767px) {
+    .contact .container {flex-direction: column;}
+    .contact .info h2,.contact .info p:not(:last-of-type) {text-align: center;}
+    .contact .form {margin-top: 30px;}
+
+}
+
+/*end contact*/
+
+/*start footer*/
+
+.footer {
+    background-color: #191E22;
+    color:#6a6e71;
+    padding:15px 0;
+}
+
+.footer p {margin: 0;}
+
+.footer ul {list-style: none;padding-left: 0;margin-bottom: 0;}
+
+.footer ul li {display:inline-block;}
+
+/*end footer*/
